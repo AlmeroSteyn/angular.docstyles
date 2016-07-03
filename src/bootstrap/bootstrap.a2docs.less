@@ -1,0 +1,35 @@
+@import '../../node_modules/bootstrap/less/bootstrap.less';
+@import '../global/palette.less';
+
+//Font override
+@font-family-sans-serif: "Roboto", Helvetica, Sans-Serif;
+
+//Glyphicons font path
+@icon-font-path: "../../node_modules/bootstrap/fonts/";
+
+//Class overrides
+@jumbotron-bg: @gray-dark;
+@jumbotron-heading-color: @gray-lighter;
+@input-color: @black;
+@well-bg: @gray-lighter;
+@text-color: @gray-darker;
+@btn-primary-color: @gray-lighter;
+@btn-primary-bg: @gray;
+
+//Accessibility tweaks
+@danger-text: #632827;
+@state-danger-text: @danger-text;
+
+input::-webkit-input-placeholder {
+  color: @gray-light !important;
+}
+
+input::-moz-placeholder {
+  color: @gray-light !important;
+}
+
+.close,
+.close:hover,
+.close:focus{
+  opacity: 1;
+}
