@@ -3022,7 +3022,7 @@ select[multiple].input-lg {
 .btn:hover,
 .btn:focus,
 .btn.focus {
-  color: #333;
+  color: #EEEEEE;
   text-decoration: none;
 }
 .btn:active,
@@ -3046,26 +3046,26 @@ fieldset[disabled] a.btn {
   pointer-events: none;
 }
 .btn-default {
-  color: #333;
-  background-color: #fff;
+  color: #EEEEEE;
+  background-color: #616161;
   border-color: #ccc;
 }
 .btn-default:focus,
 .btn-default.focus {
-  color: #333;
-  background-color: #e6e6e6;
+  color: #EEEEEE;
+  background-color: #484848;
   border-color: #8c8c8c;
 }
 .btn-default:hover {
-  color: #333;
-  background-color: #e6e6e6;
+  color: #EEEEEE;
+  background-color: #484848;
   border-color: #adadad;
 }
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-  color: #333;
-  background-color: #e6e6e6;
+  color: #EEEEEE;
+  background-color: #484848;
   border-color: #adadad;
 }
 .btn-default:active:hover,
@@ -3077,8 +3077,8 @@ fieldset[disabled] a.btn {
 .btn-default:active.focus,
 .btn-default.active.focus,
 .open > .dropdown-toggle.btn-default.focus {
-  color: #333;
-  background-color: #d4d4d4;
+  color: #EEEEEE;
+  background-color: #363636;
   border-color: #8c8c8c;
 }
 .btn-default:active,
@@ -3095,12 +3095,12 @@ fieldset[disabled] .btn-default:focus,
 .btn-default.disabled.focus,
 .btn-default[disabled].focus,
 fieldset[disabled] .btn-default.focus {
-  background-color: #fff;
+  background-color: #616161;
   border-color: #ccc;
 }
 .btn-default .badge {
-  color: #fff;
-  background-color: #333;
+  color: #616161;
+  background-color: #EEEEEE;
 }
 .btn-primary {
   color: #EEEEEE;
@@ -6729,6 +6729,11 @@ input::-webkit-input-placeholder {
 }
 input::-moz-placeholder {
   color: #616161 !important;
+}
+label input,
+label textarea,
+label select {
+  font-weight: normal;
 }
 .close,
 .close:hover,
