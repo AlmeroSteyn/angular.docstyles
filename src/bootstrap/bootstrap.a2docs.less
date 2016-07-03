@@ -1,6 +1,14 @@
 @import '../../node_modules/bootstrap/less/bootstrap.less';
 @import '../global/palette.less';
 
+//Main Bootstrap color overrides
+@gray-base: @black;
+@gray-darker: @black;
+@gray-dark: @material-900;
+@gray: @material-800;
+@gray-light: @material-700;
+@gray-lighter: @material-200;
+
 //Font override
 @font-family-sans-serif: "Roboto", Helvetica, Sans-Serif;
 
@@ -15,6 +23,8 @@
 @text-color: @gray-darker;
 @btn-primary-color: @gray-lighter;
 @btn-primary-bg: @gray;
+@label-color: @gray-lighter;
+@label-default-bg: @gray-dark;
 
 //Accessibility tweaks
 @danger-text: #632827;
