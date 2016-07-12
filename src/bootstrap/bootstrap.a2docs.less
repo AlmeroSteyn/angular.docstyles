@@ -1,5 +1,6 @@
 @import '../../node_modules/bootstrap/less/bootstrap.less';
 @import '../global/palette.less';
+@import '../mixins/mixins.less';
 
 //Main Bootstrap color overrides
 @gray-base: @black;
@@ -27,6 +28,41 @@
 @btn-default-bg: @gray-light;
 @label-color: @gray-lighter;
 @label-default-bg: @gray-dark;
+
+//Opacity tweaks
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  .opacity();
+}
+
+label {
+  .opacity();
+}
+
+.label-default {
+  .opacity();
+}
+
+legend {
+  .opacity();
+}
+
+//Design tweaks
+h2 {
+  .header-text();
+}
+
+h3, legend {
+  .sub-header-text();
+}
+
+label, .label-default {
+  .label-text();
+}
+
+input {
+  .input-text();
+}
 
 //Accessibility tweaks
 @danger-text: #632827;

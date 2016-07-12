@@ -1,6 +1,7 @@
 /* Master Styles */
 h1 {
   color: #369;
+  opacity: 0.87;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 250%;
 }
@@ -113,4 +114,76 @@ a:link {
 /* everywhere else */
 * {
   font-family: Arial, Helvetica, sans-serif;
+}
+/* #docregion */
+[class*='col-'] {
+  float: left;
+}
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+h3 {
+  text-align: center;
+  margin-bottom: 0;
+}
+[class*='col-'] {
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+.grid {
+  margin: 0;
+}
+.col-1-4 {
+  width: 25%;
+}
+.module {
+  padding: 20px;
+  text-align: center;
+  color: #eee;
+  max-height: 120px;
+  min-width: 120px;
+  background-color: #4E6570;
+  border-radius: 2px;
+}
+.hero {
+  display: block;
+  position: relative;
+  -webkit-margin-before: 1.33em;
+  -webkit-margin-after: 1.33em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  font-weight: bold;
+}
+.module:hover,
+.module:focus {
+  background-color: #EEE;
+  cursor: pointer;
+  color: #4b626d;
+}
+.grid-pad {
+  padding: 10px 0;
+}
+.grid-pad > [class*='col-']:last-of-type {
+  padding-right: 20px;
+}
+@media (max-width: 600px) {
+  .module {
+    font-size: 10px;
+    max-height: 75px;
+  }
+}
+@media (max-width: 1024px) {
+  .grid {
+    margin: 0;
+  }
+  .module {
+    min-width: 60px;
+  }
 }

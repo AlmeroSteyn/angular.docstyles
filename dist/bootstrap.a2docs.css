@@ -6724,6 +6724,51 @@ button.close {
     display: none !important;
   }
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  opacity: 0.87;
+}
+label {
+  opacity: 0.87;
+}
+.label-default {
+  opacity: 0.87;
+}
+legend {
+  opacity: 0.87;
+}
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+h3,
+legend {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+}
+label,
+.label-default {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+input {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-top: 15px;
+}
 input::-webkit-input-placeholder {
   color: #616161 !important;
 }
