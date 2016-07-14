@@ -1,33 +1,13 @@
-@import '../../node_modules/bootstrap/less/bootstrap.less';
+//@import '../../node_modules/bootstrap/less/bootstrap.less';
 @import '../global/palette.less';
 @import '../mixins/mixins.less';
-
-//Main Bootstrap color overrides
-@gray-base: @black;
-@gray-darker: @black;
-@gray-dark: @material-900;
-@gray: @material-800;
-@gray-light: @material-700;
-@gray-lighter: @material-200;
-
-//Font override
-@font-family-sans-serif: "Roboto", Helvetica, Sans-Serif;
-
-//Glyphicons font path
-@icon-font-path: "../../node_modules/bootstrap/fonts/";
-
-//Class overrides
-@jumbotron-bg: @gray-dark;
-@jumbotron-heading-color: @gray-lighter;
-@input-color: @black;
-@well-bg: @gray-lighter;
-@text-color: @gray-darker;
-@btn-primary-color: @gray-lighter;
-@btn-primary-bg: @gray;
-@btn-default-color: @gray-lighter;
-@btn-default-bg: @gray-light;
-@label-color: @gray-lighter;
-@label-default-bg: @gray-dark;
+@import '../../node_modules/bootstrap/less/scaffolding.less';
+@import '../../node_modules/bootstrap/less/variables.less';
+@import './bootstrap.overrides.less';
+@import '../../node_modules/bootstrap/less/mixins.less';
+@import '../../node_modules/bootstrap/less/grid.less';
+@import '../../node_modules/bootstrap/less/utilities.less';
+@import '../../node_modules/bootstrap/less/responsive-utilities.less';
 
 //Opacity tweaks
 
@@ -48,7 +28,13 @@ legend {
 }
 
 //Design tweaks
+h1 {
+  color: @material-header;
+  .top-header-text();
+}
+
 h2 {
+  color: @material-header;
   .header-text();
 }
 
@@ -60,9 +46,35 @@ label, .label-default {
   .label-text();
 }
 
-input {
+input, textarea, select {
   .input-text();
 }
+
+.input-group-btn {
+  padding-top: 15px;
+}
+
+.shadow-1 {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+}
+
+.showcase {
+  margin-bottom: 20px;
+}
+
+.showcase .showcase-header {
+  background: #E0E0E0;
+  padding: 32px;
+}
+
+.showcase .showcase-content {
+  padding: 32px;
+}
+
+.main-header {
+  margin-bottom: 40px;
+}
+
 
 //Accessibility tweaks
 @danger-text: #632827;

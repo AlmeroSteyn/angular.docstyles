@@ -10,6 +10,12 @@ gulp.task("build-styles", function() {
         .pipe(cssmin())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('dist'));
+    gulp.src("src/bootstrap/bootstrap.a2docs.extra.less")
+        .pipe(less())
+        .pipe(gulp.dest("dist"))
+        .pipe(cssmin())
+        .pipe(rename({suffix: '.min'}))
+        .pipe(gulp.dest('dist'));
     gulp.src("src/docstyle/styles.less")
         .pipe(less())
         .pipe(gulp.dest("dist"))
