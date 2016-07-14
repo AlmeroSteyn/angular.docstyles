@@ -1,0 +1,25 @@
+//Accessibility tweaks
+@danger-text: #632827;
+@state-danger-text: @danger-text;
+
+input {
+  &::-webkit-input-placeholder {
+    color: @gray-light !important;
+  }
+
+  &::-moz-placeholder {
+    color: @gray-light !important;
+  }
+}
+
+label {
+  input, textarea, select {
+    font-weight: normal;
+  }
+}
+
+.close,
+.close:hover,
+.close:focus{
+  opacity: 1;
+}

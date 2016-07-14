@@ -1115,3 +1115,11 @@ label select {
 .close:focus {
   opacity: 1;
 }
+a:hover,
+a:visited {
+  color: #263238;
+}
+a:hover h2,
+a:visited h2 {
+  color: #263238;
+}
