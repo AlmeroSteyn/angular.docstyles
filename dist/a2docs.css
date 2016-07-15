@@ -3575,6 +3575,12 @@ button.btn {
 .main-header {
   margin-bottom: 40px;
 }
+a * {
+  color: inherit;
+}
+a *:hover {
+  color: inherit;
+}
 input::-webkit-input-placeholder {
   color: #616161 !important;
 }
